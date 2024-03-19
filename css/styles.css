@@ -116,9 +116,18 @@ header>.container {
 }
 
 .hero {
-    background-color: var(--acsent-bgc);
-    padding: 200px 0;
+      padding: 200px 0;
     text-align: center;
+
+    background-color: var(--acsent-bgc);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    )
+    ,url("../images/bgn/hero_bgn.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
