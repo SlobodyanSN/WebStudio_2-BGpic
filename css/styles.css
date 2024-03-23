@@ -184,12 +184,22 @@ header>.container {
     flex-basis: calc((100%-90px)/4);
 }
 
+.features-icon {
+    display: block;
+   padding: 25px 100px;
+    background-color: var(--sec-bgc);
+    margin-bottom: 30px;
+ 
+  
+}
+
 .features-item-title {
     color: var(--sec-text-color);
     font-size: 14px;
     font-weight: 700;
     line-height: 1.17;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .features-item>p {
     font-size: 14px;
@@ -245,6 +255,11 @@ header>.container {
 .team-mate-discription {
     padding: 30px 0;
     text-align: center;
+}
+
+.team-item-icon {
+    display: inline-block;
+    
 }
 
 .footer {
