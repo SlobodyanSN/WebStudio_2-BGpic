@@ -264,20 +264,21 @@ header>.container {
     gap: 10px;
 }
 
-.teammate-socials .link {
+.socials {
     display: block;
     border: solid  0px transparent;
     border-radius: 50%;
+    color: var(--acsent-cec-text-color);
 }
 
 .teammate-icon {
     display: block;
     padding: 12px;
-    color: currentColor;
+    fill: currentColor;
 }
 
-.teammate-socials .link:hover {
-    color: var(--acsent-text-color);
+.socials:hover {
+    background-color: var(--acsent-cec-text-color);
 }
 
 .footer {
