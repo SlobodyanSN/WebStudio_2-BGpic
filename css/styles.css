@@ -47,6 +47,21 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* ===================HEADER================= */
 header>.container {
     display: flex;
@@ -75,7 +90,8 @@ header>.container {
     text-transform: capitalize;
 }
 
-.logo-acsent:hover {
+.logo-acsent:hover,
+.logo-acsent:focus {
     color: var(--acsent-cec-text-color);
 }
 
@@ -186,14 +202,12 @@ header>.container {
     flex-basis: calc((100%-90px)/4);
 }
 
-.features-icon {
+/* .features-icon {
     display: block;
    padding: 25px 100px;
     background-color: var(--sec-bgc);
-    margin-bottom: 30px;
- 
-  
-}
+    margin-bottom: 30px;  
+} */
 
 .features-item-title {
     color: var(--sec-text-color);
@@ -202,6 +216,32 @@ header>.container {
     line-height: 1.17;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.features-item-title::before {
+    content: "";
+    display: block;
+    height: 120px;
+   background-color: var(--sec-bgc);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url("../images/svg/antenna.svg");
+}
+
+.icon-clock::before {
+    background-image: url("../images/svg/clock.svg");
+}
+.icon-diagram::before {
+    background-image: url("../images/svg/diagram.svg");
+}
+.icon-asrtonaut::before {
+    background-image: url("../images/svg/astronaut.svg");
 }
 .features-item>p {
     font-size: 14px;
@@ -279,7 +319,8 @@ header>.container {
     fill:currentColor;
 }
 
-.socials:hover {
+.socials:hover,
+.socials:focus {
     background-color: var(--acsent-cec-text-color);
     color: var(--acsent-text-color);
 }
@@ -294,12 +335,13 @@ header>.container {
     
 }
 
-.clients-item {
+.clients-link {
     color: var(--main-icon-color);
   
 }
 
-.clients-icon:hover{
+.clients-icon:hover,
+.clients-icon:focus {
     color: var(--acsent-cec-text-color);
 }
 
