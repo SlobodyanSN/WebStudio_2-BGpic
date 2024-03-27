@@ -102,6 +102,8 @@ header>.container {
 }
 
 .nav-link {
+    size:14px;
+    line-height: 1.14;
     text-transform: capitalize;
     display: block;
     padding: 30px 0;
@@ -123,8 +125,13 @@ header>.container {
     gap: 40px;
 }
 
+.contacts-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contacts-link {
-    display: block;
     padding: 30px 0;
 }
 
@@ -132,6 +139,13 @@ header>.container {
 .contacts-link:focus {
     color: var(--acsent-cec-text-color);
 }
+
+.contacts-icon {
+    margin-right: 10px;
+    
+    fill: currentColor;
+}
+
 /* ====================HERO================= */
 .hero {
       padding: 200px 0;
@@ -223,7 +237,7 @@ header>.container {
     display: block;
     height: 120px;
    background-color: var(--sec-bgc);
-    background-size: contain;
+    background-size: 70px;
     background-position: center;
     background-repeat: no-repeat;
 
