@@ -298,6 +298,11 @@ header>.container {
 
 }
 
+.teammate-discription {
+    padding: 30px 0;
+    text-align: center;
+}
+
 .teammate-title {
     font-weight: 500;
     color: var(--sec-text-color);
@@ -308,33 +313,29 @@ header>.container {
     margin-bottom: 10px;
 }
 
-.teammate-discription {
-    padding: 30px 0;
-    text-align: center;
-}
 
-.teammate-socials{
+.socials-list {
     margin-top: 16px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.socials {
+.socials-link {
     display: block;
     border: solid  0px transparent;
     border-radius: 50%;
     color: var(--main-icon-color);
 }
 
-.teammate-icon {
+.socials-icon {
     display: block;
     padding: 12px;
     fill:currentColor;
 }
 
-.socials:hover,
-.socials:focus {
+.socials-link:hover,
+.socials-link:focus {
     background-color: var(--acsent-cec-text-color);
     color: var(--acsent-text-color);
 }
@@ -370,7 +371,12 @@ header>.container {
 /* ==========================FOOTER=================== */
 .footer {
     background-color: var(--acsent-bgc);
-    padding: 60px 0;
+    padding: 33px 0;
+}
+
+.footer>.container {
+    display: flex;
+    gap: 70px;
 }
 
 .footer .logo {
@@ -405,6 +411,28 @@ header>.container {
 
 .address-map {
 color: var(--acsent-text-color);
+}
+
+.join {
+    padding-top: 10px;
+}
+
+.join-title {
+    color: var(--acsent-text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+margin-top: 37px;
+    margin-bottom: 20px;
+}
+
+.join .socials-link {
+    color: var(--acsent-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join .socials-link:hover,
+.join .socials-link:focus {
+    background-color: var(--acsent-cec-text-color);
 }
 
 
